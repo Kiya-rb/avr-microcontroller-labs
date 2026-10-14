@@ -1,0 +1,16 @@
+main DSTACK_USAGE:6 DSTACK_LEVEL:6 FILE:"GLCD.c" LINE:39
+q3 DSTACK_USAGE:6 DSTACK_LEVEL:12 FILE:"Source\q3.c" LINE:3
+Draw_clock DSTACK_USAGE:18 DSTACK_LEVEL:30 FILE:"Source\clock.c" LINE:109
+glcd_circle DSTACK_USAGE:3 DSTACK_LEVEL:33 FILE:"C:\cvavr\lib\graphics.lib" LINE:1439
+glcd_quadrant DSTACK_USAGE:10 DSTACK_LEVEL:43 FILE:"C:\cvavr\lib\graphics.lib" LINE:1389
+glcd_line2 DSTACK_USAGE:8 DSTACK_LEVEL:51 FILE:"C:\cvavr\lib\graphics.lib" LINE:1361
+glcd_line DSTACK_USAGE:21 DSTACK_LEVEL:72 FILE:"C:\cvavr\lib\graphics.lib" LINE:778
+glcd_putpixelm DSTACK_USAGE:3 DSTACK_LEVEL:75 FILE:"C:\cvavr\lib\graphics.lib" LINE:737
+glcd_putpixel DSTACK_USAGE:5 DSTACK_LEVEL:80 FILE:"C:\cvavr\lib\glcd_ks0108.lib" LINE:518
+ks0108_rdbyte DSTACK_USAGE:2 DSTACK_LEVEL:82 FILE:"C:\cvavr\lib\glcd_ks0108.lib" LINE:372
+ks0108_gotoxp DSTACK_USAGE:2 DSTACK_LEVEL:84 FILE:"C:\cvavr\lib\glcd_ks0108.lib" LINE:279
+ks0108_setloc DSTACK_USAGE:0 DSTACK_LEVEL:84 FILE:"C:\cvavr\lib\glcd_ks0108.lib" LINE:268
+ks0108_wrcmd DSTACK_USAGE:2 DSTACK_LEVEL:86 FILE:"C:\cvavr\lib\glcd_ks0108.lib" LINE:228
+ks0108_busy DSTACK_USAGE:2 DSTACK_LEVEL:88 FILE:"C:\cvavr\lib\glcd_ks0108.lib" LINE:152
+ks0108_rdbus DSTACK_USAGE:1 DSTACK_LEVEL:89 FILE:"C:\cvavr\lib\glcd_ks0108.lib" LINE:122
+timer1_ovf_isr DSTACK_USAGE:1 DSTACK_LEVEL:90 FILE:"GLCD.c" LINE:30

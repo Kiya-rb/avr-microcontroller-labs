@@ -1,0 +1,41 @@
+# toolchain build output
+Debug/
+Release/
+*.o
+*.a
+*.d
+*.lss
+*.map
+*.lst
+*.cof
+*.ol
+*.al
+*.sym
+*.sym1
+*.sym2
+*.sym3
+*.str1
+*.str2
+*.str3
+*.cci
+*.hci
+*.dbg
+*.fts
+*.lsl
+*.atsuo
+*.pdsbak
+*.exe
+*.dll
+
+# editor / OS / backup noise
+*~
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+Project Backups/
+
+# submission archives and tool workspaces
+*.rar
+*.zip
+*.workspace

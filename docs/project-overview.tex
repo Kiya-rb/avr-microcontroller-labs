@@ -1,0 +1,56 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.7cm]{geometry}
+\usepackage{enumitem}\usepackage{titlesec}\usepackage[hidelinks]{hyperref}\usepackage{parskip}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+\setlist[itemize]{topsep=2pt,itemsep=1pt,parsep=0pt,leftmargin=1.3em}
+\pagestyle{empty}
+\begin{document}
+\begin{center}
+{\Large\bfseries AVR Microcontroller Laboratory \textendash{} 10 Experiments in Embedded C}\\[2pt]
+{\large Peripherals, interrupts and buses on the ATmega16/32 (CodeVisionAVR / Atmel Studio + Proteus)}\\[4pt]
+{\small Digital Systems Design Laboratory 2 \textendash{} B.Sc. Electrical Engineering, Isfahan University of Technology}\\
+{\small Author: Kiavash Rabbani Soudabi \textendash{} term 1401 (2022--2023)}
+\end{center}
+
+\section*{Purpose}
+Ten laboratory experiments covering the peripherals of an 8-bit AVR microcontroller end to end: write the embedded C
+driver, configure the peripheral at register level, simulate the circuit in Proteus and validate the behaviour on the
+schematic. The experiments progress from GPIO up to interrupt-driven serial buses.
+
+\section*{Experiments}
+\begin{itemize}
+  \item \textbf{1 \textendash{} Digital I/O ports:} reading switches and driving LEDs through the port registers.
+  \item \textbf{2 \textendash{} Seven-segment displays:} multiplexed display driving with a modular source layout.
+  \item \textbf{3 \textendash{} Alphanumeric LCD and keypad:} LCD initialisation and printing, 4x4 keypad scanning,
+        and interaction between the two.
+  \item \textbf{4 \textendash{} Timers and interrupts:} timer configuration, precise delays and interrupt service
+        routines.
+  \item \textbf{5 \textendash{} Motor drives:} DC and stepper motor control (direction, speed).
+  \item \textbf{6 \textendash{} ADC:} the same conversion implemented both by polling and with interrupts, and the two
+        approaches compared.
+  \item \textbf{7 \textendash{} UART:} initialisation, interrupt-driven transmission/reception and printing received
+        text on the LCD.
+  \item \textbf{8 \textendash{} Graphic LCD:} 128x64 display with bitmap rendering, a clock and a dot-matrix font.
+  \item \textbf{9 \textendash{} SPI:} master/slave communication between two microcontrollers with LCD output (group
+        exercise).
+  \item \textbf{10 \textendash{} I2C (TWI) and EEPROM:} master/slave I2C between an ATmega16 and an ATmega32, plus
+        read/write of a 24LC32 EEPROM.
+\end{itemize}
+
+\section*{Verification and tools}
+Embedded C written in CodeVisionAVR and Atmel Studio, simulated in Proteus with the in-circuit AVR model; each
+experiment keeps its project files, its schematic (\texttt{.pdsprj}) and the compiled \texttt{.hex} so the simulation
+runs as submitted. My written reports for experiments 1, 3 and 5 are included, together with screen captures of the
+Proteus schematics and a compressed screen recording per experiment.
+
+\section*{Repository contents}
+One folder per experiment (\texttt{exp01-io-port} \dots \texttt{exp10-i2c-eeprom}) with the C sources, project files,
+Proteus schematics, firmware images and demo videos; \texttt{docs/} with this overview.
+
+\section*{Skills demonstrated}
+Embedded C on an 8-bit AVR; register-level peripheral programming (GPIO, timers, ADC, UART, SPI, I2C/TWI);
+interrupt-driven design and ISRs; display drivers for 7-segment, alphanumeric and graphic LCDs; motor control;
+master/slave multi-microcontroller buses; EEPROM interfacing; the CodeVisionAVR and Atmel Studio toolchains;
+simulation-based validation in Proteus.
+\end{document}
